@@ -3,9 +3,9 @@ title: Extension Packs
 slug: /website/packs
 ---
 
-Extension packs let you add an entire extension gallery to NitroBolt using one JSON file. Users add the direct URL to your `pack.json` from the **+** button in the extension picker.
+Extension packs let you add an entire extension gallery to SpinachMod using one JSON file. Users add the direct URL to your `pack.json` from the **+** button in the extension picker.
 
-NitroBolt downloads the pack when the website is opened. After a successful download, it also saves a local copy so the gallery can still be displayed if the source is temporarily unavailable.
+SpinachMod downloads the pack when the website is opened. After a successful download, it also saves a local copy so the gallery can still be displayed if the source is temporarily unavailable.
 
 :::warning
 Extensions listed in the extension picker, including extensions from packs, are loaded unsandboxed. Only add packs and extensions that you trust. See [The Sandbox](../extensions/sandbox.md) for details about unsandboxed extensions.
@@ -54,7 +54,7 @@ Extensions listed in the extension picker, including extensions from packs, are 
 }
 ```
 
-With this example, NitroBolt loads:
+With this example, SpinachMod loads:
 
 - The extension from `https://extensions.creator.com/extension.js`
 - The banner from `https://extensions.creator.com/extension.svg`
@@ -79,11 +79,11 @@ Each item in `extensions` supports the following keys:
 
 | Key | Required | Description |
 | --- | --- | --- |
-| `slug` | Yes | The extension's path or URL. NitroBolt adds `.js` when the value does not already end in `.js`. Relative paths use `information.source`. |
+| `slug` | Yes | The extension's path or URL. SpinachMod adds `.js` when the value does not already end in `.js`. Relative paths use `information.source`. |
 | `id` | Yes | The extension ID returned by the extension's `getInfo()` method. This must match exactly. |
 | `name` | Yes | The name displayed on the extension tile. |
 | `description` | No | A short explanation of the extension. |
-| `image` | No | A banner image path or URL. Relative paths use `information.source`. NitroBolt's default extension banner is used when this is omitted. |
+| `image` | No | A banner image path or URL. Relative paths use `information.source`. SpinachMod's default extension banner is used when this is omitted. |
 | `by` | No | People who created or contributed to this version of the extension. |
 | `original` | No | Credits for the extension's original creators. Uses the same format as `by`. |
 | `nameTranslations` | No | An object mapping locale codes to translated names. |
@@ -91,7 +91,7 @@ Each item in `extensions` supports the following keys:
 | `docs` | No | When truthy, adds a documentation link by resolving the unmodified `slug` against `information.source`. The `.js` suffix used to load the extension is not added to this URL. |
 | `samples` | No | An array of sample project names. Each name resolves to `samples/<name>.sb3` under `information.source`. |
 
-These are all of the extension metadata keys currently read by NitroBolt's pack loader. Other keys may appear in a gallery's own metadata, but NitroBolt ignores them and they do not need to be copied into `pack.json`.
+These are all of the extension metadata keys currently read by SpinachMod's pack loader. Other keys may appear in a gallery's own metadata, but SpinachMod ignores them and they do not need to be copied into `pack.json`.
 
 Both `by` and `original` are arrays of credit objects:
 
@@ -121,7 +121,7 @@ Translations use locale codes as keys:
 
 ## Hosting your pack
 
-Host `pack.json`, extension scripts, images, and sample projects on a public HTTP or HTTPS server. Because NitroBolt fetches these files from the user's browser, the server must allow cross-origin requests from NitroBolt. A common response header is:
+Host `pack.json`, extension scripts, images, and sample projects on a public HTTP or HTTPS server. Because SpinachMod fetches these files from the user's browser, the server must allow cross-origin requests from SpinachMod. A common response header is:
 
 ```text
 Access-Control-Allow-Origin: *
@@ -133,9 +133,9 @@ Use a stable direct URL that returns the JSON file itself, not a repository page
 https://example.com/gallery/pack.json
 ```
 
-Keep that URL unchanged when updating the pack. NitroBolt checks the URL again when the website is opened, so users receive new entries and metadata without importing it again.
+Keep that URL unchanged when updating the pack. SpinachMod checks the URL again when the website is opened, so users receive new entries and metadata without importing it again.
 
-## Adding the pack to NitroBolt
+## Adding the pack to SpinachMod
 
 1. Open the extension picker.
 2. Select the **+** button before the gallery tags.
@@ -144,4 +144,4 @@ Keep that URL unchanged when updating the pack. NitroBolt checks the URL again w
 
 The pack's gallery filter appears after the built-in and individually added extension sections.
 
-You can also browse packs maintained by the NitroBolt community at [packs.nitrobolt.org](https://packs.nitrobolt.org/).
+You can also browse packs maintained by the SpinachMod community at [packs.nitrobolt.org](https://packs.nitrobolt.org/).
