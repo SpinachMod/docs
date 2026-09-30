@@ -1,8 +1,8 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'SpinachMod Documentation',
-  url: 'https://spinachmod.github.io/docs/',
-  baseUrl: '/',
+  url: 'https://spinachmod.github.io',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   organizationName: 'SpinachMod',
