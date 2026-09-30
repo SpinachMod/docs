@@ -3,6 +3,6 @@ title: Intro
 slug: /
 ---
 
-# NitroBolt Documentation
+# SpinachMod Documentation
 
-Welcome to the NitroBolt documentation! Here, you will find technical information for the Nitrobolt editor, a [TurboWarp](https://turbowarp.org) mod that pushes the limits of what the [Scratch editor](https://scratch.org/create) can do.
+Welcome to the SpinachMod documentation! Here, you will find technical information for the SpinachMod editor, a [NitroBolt](https://nitrobolt.org) and [TurboWarp](https://turbowarp.org) mod that pushes the limits of what the [Scratch editor](https://scratch.org/create) can do.
