@@ -1,29 +1,29 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'NitroBolt Documentation',
-  url: 'https://docs.nitrobolt.org',
+  title: 'SpinachMod Documentation',
+  url: 'https://spinachmod.github.io/docs/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  organizationName: 'NitroBolt',
+  organizationName: 'SpinachMod',
   projectName: 'docs',
   trailingSlash: false,
   themeConfig: {
     navbar: {
-      title: 'NitroBolt Documentation',
+      title: 'SpinachMod Documentation',
       items: [
         {
           href: 'https://types.nitrobolt.org/',
-          label: 'Type Reference',
+          label: 'NitroBolt Type Reference',
           position: 'left'
         },
         {
-          href: 'https://nitrobolt.org/',
-          label: 'NitroBolt',
+          href: 'https://spinachmod.github.io/',
+          label: 'SpinachMod',
           position: 'right'
         },
         {
-          href: 'https://github.com/Nitro-Bolt',
+          href: 'https://github.com/SpinachMod',
           label: 'GitHub',
           position: 'right',
         },
